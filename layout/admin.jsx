@@ -4,13 +4,13 @@ import BSComFooterAdmin from "../components/Footers/FooterAdmin";
 
 export default function BSLayoutAdmin({ children }) {
   return (
-    <>
-      <BSComHeaderAdmin />
-      <section>
-        <BSComSidebar />
-        <div className="container">{children}</div>
+    <div className="flex">
+      <BSComSidebar />
+      <section className="flex-1">
+        <BSComHeaderAdmin />
+        <div className="container px-8 py-12">{children}</div>
+        <BSComFooterAdmin />
       </section>
-      <BSComFooterAdmin />
-    </>
+    </div>
   );
 }

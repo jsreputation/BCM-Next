@@ -3,12 +3,12 @@ import BSLayoutAdmin from "../layout/admin";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <h1>Container here</h1>
     </div>
   );
 }
 
 Home.getLayout = function getLayout(page) {
-  return <BSLayoutAdmin />;
+  return <BSLayoutAdmin>{page}</BSLayoutAdmin>;
 };

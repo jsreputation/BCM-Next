@@ -5,7 +5,7 @@ export default function BSLayoutAdmin({ children }) {
   return (
     <>
       <BSComHeaderLanding />
-      <section className="container bg-red-400">{children}</section>
+      <section className="container bg-red-400 mx-auto">{children}</section>
       <BSComFooterLanding />
     </>
   );

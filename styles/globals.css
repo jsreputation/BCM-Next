@@ -4,7 +4,8 @@
 
 @layer base {
   body {
-    @apply dark:text-darkColor text-lightColor
+    @apply dark:bg-black dark:text-darkColor text-lightColor bg-white;
+    @apply min-h-screen
   }
   h1 {
     @apply text-5xl;

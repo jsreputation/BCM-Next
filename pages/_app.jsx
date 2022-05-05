@@ -1,9 +1,14 @@
 import "../styles/globals.css";
+import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
 
-  return getLayout(<Component {...pageProps} />);
+  return (
+    <ThemeProvider enableSystem={true} attribute="class">
+      {getLayout(<Component {...pageProps} />)}
+    </ThemeProvider>
+  );
 }
 
 export default MyApp;
